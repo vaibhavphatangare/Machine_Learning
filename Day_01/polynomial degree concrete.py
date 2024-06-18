@@ -54,22 +54,3 @@ tst_poly = poly.fit_transform(tst_conc)
 
 # Use the trained model to predict the concrete strength for the new data
 pred_str = lr.predict(tst_poly)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
