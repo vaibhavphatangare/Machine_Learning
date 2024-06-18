@@ -32,13 +32,11 @@ y_pred = lr.predict(x_test)
 print(r2_score(y_test,y_pred))
 #print(y_pred)
 
-#When we compare between degree 2 and degree 3 , we come
-#to a conclusion that model with degree 3 is best
+#When we compare between degree 2 and degree 3 , we come to a conclusion that model with degree 3 is best
 
 #-------------------------------new dataset (predict value)(overfitting)-------------------------------------------
 
-#Predicting on the unlabelled data is called Inferencing 
-#inferencing predicting on unlabelled data
+#Predicting on the un-labelled data is called Inferencing 
 tst_conc = pd.read_csv('testConcrete.csv')
 tst_poly = poly.fit_transform(tst_conc)
 pred_str = lr.predict(tst_poly)
